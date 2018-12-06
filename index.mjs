@@ -157,6 +157,11 @@ export const unary = (outer) => (extractor) => (inner) => ({
   kind: 'unary',
   meta: {outer, extractor, inner},
   names: [`(${outer.names[0]} ${inner.names[0]})`],
+  docs: [
+    'https://github.com/wearereasonablepeople/typisch#unary',
+    outer.docs[0],
+    inner.docs[0],
+  ],
   subsets: (
     flatMap
       (osub => (
