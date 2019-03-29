@@ -1,0 +1,46 @@
+{
+  "name": "typisch",
+  "version": "0.0.0",
+  "description": "Set-theory based runtime type system",
+  "main": "index",
+  "author": "WEAREREASONABLEPEOPLE B.V. <info@wearereasonablepeople.com> (https://wearereasonablepeople.com)",
+  "license": "MIT",
+  "contributors": [
+    "Aldwin Vlasblom <aldwin@avaq.it> (https://github.com/Avaq)",
+    "Frank Stokes <frank@wearereasonablepeople.com>"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "coveralls": "c8 report -r text-lcov > coveralls",
+    "doctest": "sanctuary-doctest",
+    "lint": "sanctuary-lint",
+    "release": "sanctuary-release",
+    "test": "npm run lint && sanctuary-test && npm run doctest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wearereasonablepeople/typisch.git"
+  },
+  "keywords": [
+    "set-theory",
+    "types",
+    "type-checking",
+    "validation"
+  ],
+  "files": [
+    "/index.js",
+    "/index.mjs",
+    "/LICENSE",
+    "/package.json",
+    "/README.md"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "c8": "^3.4.0",
+    "coveralls": "^3.0.3",
+    "esm": "^3.0.84",
+    "oletus": "^1.1.5",
+    "rollup": "^1.7.4",
+    "sanctuary-scripts": "^3.1.1"
+  }
+}
